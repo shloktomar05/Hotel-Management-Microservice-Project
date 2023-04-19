@@ -1,0 +1,8 @@
+com\springboot\hotel\HotelService\service\HotelService.class
+com\springboot\hotel\HotelService\repositories\HotelRepository.class
+com\springboot\hotel\HotelService\service\Impl\HotelServiceImpl.class
+com\springboot\hotel\HotelService\exception\ResourceNotFoundException.class
+com\springboot\hotel\HotelService\controller\HotelController.class
+com\springboot\hotel\HotelService\exception\GlobalExceptionHandler.class
+com\springboot\hotel\HotelService\entities\Hotel.class
+com\springboot\hotel\HotelService\HotelServiceApplication.class
