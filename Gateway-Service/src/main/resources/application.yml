@@ -24,6 +24,11 @@ spring:
           predicates:
             - Path=/hotel/**
 
+        - id: Mapper-Service
+          uri: lb://Mapper-Service
+          predicates:
+            - Path=//mapper/**
+
 
 
 eureka:

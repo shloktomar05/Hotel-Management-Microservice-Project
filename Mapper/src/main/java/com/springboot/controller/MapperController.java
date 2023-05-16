@@ -9,7 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/mapper/")
+@RequestMapping("/mapper")
 public class MapperController {
     private final MapperService mapperService;
 
@@ -18,25 +18,24 @@ public class MapperController {
     }
 
     @PostMapping
-    public HeaderResponse createHeader(@RequestBody HeaderRequest request){
+    public HeaderResponse createHeader(@RequestBody HeaderRequest request) {
         return mapperService.createHeader(request);
     }
 
     @PutMapping
-    public HeaderResponse updateHeader(@RequestBody UpdateHeaderRequest request){
+    public HeaderResponse updateHeader(@RequestBody UpdateHeaderRequest request) {
         return mapperService.updateHeader(request);
     }
 
     @GetMapping
-    public Page<HeaderResponse> getAllHeader(Pageable pageable){
-        return  mapperService.getAllHeader(pageable);
+    public Page<HeaderResponse> getAllHeader(Pageable pageable) {
+        return mapperService.getAllHeader(pageable);
     }
 
     @GetMapping("id/{id}")
-    public HeaderResponse getHeaderById(@PathVariable String id){
-       return mapperService.getHeaderById(id);
+    public HeaderResponse getHeaderById(@PathVariable String id) {
+        return mapperService.getHeaderById(id);
     }
-
 
 
 }
