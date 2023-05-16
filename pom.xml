@@ -21,6 +21,7 @@
         <module>Gateway-Service</module>
         <module>Eureka-Discovery-Service</module>
         <module>Config-Server</module>
+        <module>Mapper</module>
     </modules>
 
     <properties>

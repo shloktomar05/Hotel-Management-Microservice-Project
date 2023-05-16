@@ -2,16 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Rating-Service" />
+        <module name="Mapper" />
+        <module name="Hotel-Service" />
         <module name="Gateway-Service" />
         <module name="Eureka-Discovery-Service" />
         <module name="Config-Server" />
         <module name="User-Service" />
-        <module name="Hotel-Service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +23,7 @@
       <module name="Eureka-Discovery-Service" options="-parameters" />
       <module name="Gateway-Service" options="-parameters" />
       <module name="Hotel-Service" options="-parameters" />
+      <module name="Mapper" options="-parameters" />
       <module name="Rating-Service" options="-parameters" />
       <module name="User-Service" options="-parameters" />
     </option>
